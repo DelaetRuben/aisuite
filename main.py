@@ -1,14 +1,14 @@
+import json
+import logging
+from logging import Logger
 from pathlib import Path
 from urllib.request import Request
-from logging import Logger
 
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.responses import Response
-from models import *
 
 from aisuite import Client
-import json
-import logging
+from models import *
 
 logging.basicConfig(
     level=logging.INFO,
